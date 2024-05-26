@@ -13,11 +13,14 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  # Setting an environment variable with the value of a configuration variable
+  GPB_BOT_TOKEN_SUMKIN: ${{ vars.GPB_BOT_TOKEN_SUMKIN}}
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: test
     permissions:
       contents: read
 
