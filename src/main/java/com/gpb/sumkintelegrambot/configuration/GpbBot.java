@@ -1,9 +1,8 @@
-package com.gpb.sumkintelegrambot2.configuration;
+package com.gpb.sumkintelegrambot.configuration;
 
-import com.gpb.sumkintelegrambot2.service.CommandsService;
+import com.gpb.sumkintelegrambot.service.CommandsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.longpolling.BotSession;
 import org.telegram.telegrambots.longpolling.interfaces.LongPollingUpdateConsumer;

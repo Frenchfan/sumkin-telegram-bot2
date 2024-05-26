@@ -1,10 +1,10 @@
-package com.gpb.sumkintelegrambot2;
+package com.gpb.sumkintelegrambot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SumkinTelegramBot2ApplicationTests {
+class SumkinTelegramBotApplicationTests {
 
     @Test
     void contextLoads() {
