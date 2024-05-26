@@ -17,7 +17,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: production
+    environment: test
     permissions:
       contents: read
 
