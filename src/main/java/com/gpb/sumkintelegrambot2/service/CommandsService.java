@@ -11,7 +11,6 @@ import org.telegram.telegrambots.meta.generics.TelegramClient;
 
 @Service
 @Slf4j
-//@PropertySource("classpath:application.yaml")
 public class CommandsService {
 
     private static final String PING = "/ping";
