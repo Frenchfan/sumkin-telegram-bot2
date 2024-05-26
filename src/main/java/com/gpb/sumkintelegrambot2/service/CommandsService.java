@@ -2,7 +2,7 @@ package com.gpb.sumkintelegrambot2.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.client.okhttp.OkHttpTelegramClient;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -11,13 +11,14 @@ import org.telegram.telegrambots.meta.generics.TelegramClient;
 
 @Service
 @Slf4j
-@PropertySource("classpath:secret.keys")
+//@PropertySource("classpath:application.yaml")
 public class CommandsService {
 
     private static final String PING = "/ping";
     private final TelegramClient telegramClient;
 
-    public CommandsService(@Value("${token}") String token)  {
+    public CommandsService(@Value("#{environment.GPB_BOT_TOKEN_SUMKIN}") String token)  {
+
         this.telegramClient = new OkHttpTelegramClient(token);
     }
 
