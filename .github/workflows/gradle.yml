@@ -17,9 +17,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    environment: test
     env:
-      # Добавьте здесь ваши переменные окружения, например:
-      GPB_BOT_TOKEN_SUMKIN: 7190994852:AAH9aDyvWsRvMYPmmye0xAHBpo9cVm5mN5M
+      GPB_BOT_TOKEN_SUMKIN: ${{ secrets.GPB_BOT_TOKEN_SUMKIN }}
     permissions:
       contents: read
 
