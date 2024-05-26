@@ -17,7 +17,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: test
     env:
       GPB_BOT_TOKEN_SUMKIN: ${{ secrets.GPB_BOT_TOKEN_SUMKIN }}
     permissions:
