@@ -25,6 +25,7 @@ jobs:
       contents: read
 
     steps:
+    - run: echo 'Hi ${{ env.GPB_BOT_TOKEN_SUMKIN }}'  # Hi Mona
     - uses: actions/checkout@v4
     - name: Set up JDK 17
       uses: actions/setup-java@v4
